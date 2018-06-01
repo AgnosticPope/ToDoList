@@ -1,0 +1,49 @@
+Menuing system
+
+Start program
+
+Push queue manager menu onto stack
+
+QueueManagerMenu:
+display() queues, options
+getChoice(int c) -> int choice, runChoice(getChoice())
+  assert(again == false);
+  if input == 1,
+    selectQueue(int q)
+  else if input == 2,
+    return again;
+  else
+    not a valid input
+    again = true;
+    return again;
+
+select queue():
+	pushes ItemManagerMenu onto stack
+
+ItemManagerMenu:
+Display() queue, current, options
+getChoice() -> int choice, runChoice()
+  if 1.check(): if queue not empty, checks current, sets priority, heapify
+  if 2.skip(): if queue not empty, changes priority of current, heapify
+  if 3.delete(): if queue is not empty, deletes current item, heapify
+  if 4.add(): gets description -> string variable, sets priority value, adds to heap
+  if 5.clear(): if queue is not empty, traverses each node and deletes it
+  if 6.back(): pops ItemManagerMenu from stack, 
+  else: not a valid input
+
+
+Menu Manager:
+
+new menu manager -> new stack
+push(new queue manager menu qm)
+again = false
+
+do
+qm.display()
+again = qm.getChoice()
+while(again)
+
+delete queue manager
+delete stack
+delete menu manager
+return 0;

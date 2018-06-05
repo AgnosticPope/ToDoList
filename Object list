@@ -1,0 +1,4 @@
+List Item
+HeapQueue: add(ItemType newItem), delete, peek(), heapify(), isEmpty()
+Queue File Manager: saveQ(), loadQ(), buildQ()
+Menu: mainMenu(), qMenu(), switch/case statements 

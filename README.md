@@ -1,7 +1,4 @@
 # ToDoList
-A to do list where entries are sorted by priority value. 
-A set of heap priority queues that uses a menuing system to add, delete, and retrieve items. 
+A menu-driven program that manages 3 to do lists. Entries are sorted by priority value and contained/managed by a heap priority queue. Each queue is managed by a file manager object that is responsible for loading, saving, and building the queues.
 
-Current state: Working on designing a menuing system.
-
-Updates: streamlined and updated the design flowchart. Added pseudocode and design notes on the menu. 
+Current status: Considering what classes are needed for inheritance for the Heap Priority Queue. I am looking at class heap, class priority queue interface. Also considering what type of inheritance or composition is going to be used. About to write some pseudocode to try to figure this out. 

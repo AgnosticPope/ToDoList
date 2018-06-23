@@ -7,9 +7,9 @@ Listing 4-1 */
 template<class ItemType>
 class Node
 {
-private:
+protected:
 	ItemType        description; // A data item
-	Node<ItemType>* next; // Pointer to next node
+    Node<ItemType>* next=nullptr; // Pointer to next node
 
 public:
 	Node();

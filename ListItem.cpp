@@ -2,14 +2,13 @@
 
 //default constructor
 template <class ItemType>
-ListItem<ItemType>::ListItem() : completed(0), next(nullptr)
+ListItem<ItemType>::ListItem() : completed(0)
 {
 }//end default constructor
 
 //parameterized constructor
 template <class ItemType>
-ListItem<ItemType>::ListItem(int value, ItemType &desc) : priorityValue(value), description(desc),
-completed(0), next(nullptr)
+ListItem<ItemType>::ListItem(int value, ItemType &desc) : Node<ItemType>(desc),priorityValue(value),completed(0)
 {
 }//end constructor
 
